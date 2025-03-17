@@ -1,3 +1,5 @@
+# Chines
+
 # 😎 桌面智能(障)助理 (DCA)
 
 **"比你想的更智障，卻比你預期的更有趣！"**
@@ -82,4 +84,91 @@ DCA 僅限於**娛樂和惡搞**，請負責任地使用，並尊重他人設備
 若遇到問題、想法、或爆笑的創意，請隨時提問或開啟 Issue。
 
 **混亂至上，快樂至上！✌️**
+
+# Chines
+
+# 😎 Desktop Chaos Assistant (DCA)
+
+**"More chaotic than you think, but way more fun than you expect!"**
+
+---
+
+## 🎯 Project Overview
+
+**Desktop Chaos Assistant (DCA)** is a wildly creative and prank-style desktop assistant designed to bring chaos and laughter to your computer experience. Whether you're looking to prank your friends, break the monotony of your day, or simply add some unexpected "surprises," DCA is your ultimate choice. 😈
+
+> **"Who needs productivity when you can have chaos?"**
+
+---
+
+## 🔥 Key Features
+
+✅ **Mouse Auto-Mover** — Randomly moves the mouse, drawing hearts ❤️ or other funny patterns.\
+✅ **Surprise Gift Pack** — Randomly pops up hilarious meme videos to keep you laughing.\
+✅ **Surprise Cat (Gift Cat)** — Adds extra surprises every 5 seconds, doubling the fun.\
+✅ **Random Software Launcher** — Unexpectedly opens random software to add some "unknown surprises" to your day.\
+✅ **Guaranteed Rickroll** — Don't worry, DCA will ensure you get Rickrolled! 🎵
+
+---
+
+## 🚀 Installation Steps
+
+Simply download the entire Code folder.\
+Convert the code into an `.exe` file (or add your own creative functions).\
+After downloading, hide it somewhere your friend won't find it.\
+Then just run it and watch the chaos unfold!
+
+---
+
+## 🧩 How It Works
+
+The following modules alternate every 5 seconds, ensuring endless fun and surprises:
+- The `mouse` module continuously runs, ensuring your mouse can "teleport" at any time.
+- The `gift` and `gift_cat` modules randomly play meme videos.
+- The `software` module starts immediately to ensure seamless activation.
+
+> **"DCA will ensure your desktop is never quiet again!"**
+
+---
+
+## 🤖 How to Use
+
+1. Run `main.py` or the `.exe` file.\
+2. Sit back, relax, and enjoy the chaos unfolding on your computer. 💥\
+3. (Optional) Watch your friends panic in confusion. 😎
+
+---
+
+## 🛠️ System Requirements
+
+- Python 3.10+
+- Libraries: `pyqt6`, `PIL`, `cv2`, `subprocess`, `threading`, `os`, `sys`, `time`, `psutil`, `subprocess`, `webbrowser`, `PIL`, `PyQt6`, `pynput.keyboard`, `cv2`, `threading`
+
+---
+
+## ⚠️ Disclaimer
+
+DCA is intended for **entertainment and prank purposes only**. Please use responsibly and respect other people's devices. We are **not responsible** for any chaotic consequences. 😎
+
+> **"Crafted with ❤️ by Three Brilliant Idiots"**
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**. Feel free to modify, contribute, and expand DCA's functionality to make the chaos even better!
+
+---
+
+## 🤝 Contributing
+
+We welcome all contributions! Whether you're adding new features, improving code quality, or suggesting new chaotic ideas, feel free to fork the repo and submit a PR. Let's expand the chaos together! 🚀
+
+---
+
+## 📧 Contact
+
+If you have any issues, ideas, or hilarious new features in mind, feel free to ask or open an issue.
+
+**Chaos above all, happiness above all! ✌️**
 
