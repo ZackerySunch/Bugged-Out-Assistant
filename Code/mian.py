@@ -4,10 +4,20 @@ import time
 import psutil
 import subprocess
 import webbrowser
+import gift.gift
+import gift_cat
+import mouse
+
+import time
+import signal
+import sys
 from PIL import Image, ImageTk
 from PyQt6 import QtWidgets, QtGui, QtCore
 from pynput.keyboard import Controller,Listener,Key
 from PyQt6.QtWidgets import QMessageBox,QStackedLayout
+
+import gift_cat.gift_cat
+import mouse.mouse
 
 class Check_Start(QtWidgets.QWidget):
     def __init__(self):
@@ -270,36 +280,46 @@ class StartBreak(QtWidgets.QWidget):
         
         processes = []
         
+        # 🔥 信號處理，確保 CTRL + C 可以結束所有進程
+        def signal_handler(sig, frame):
+            print("\n中斷程式，正在關閉所有進程...")
+            for process in processes:
+                process.terminate()  # 強制終止進程
+            sys.exit(0)
+
+        # 🔥 綁定 CTRL + C 中斷
+        signal.signal(signal.SIGINT, signal_handler)
+
+        # 🔹 啟動 keybord.exe
         if self.keybord == 1:
             print("keybord")
             file_path = "keybord.exe"
-            processes.append(subprocess.Popen(file_path))
-            
-        if self.mouse == 1:
-            print("mouse")
-            file_path = "mouse\mouse.exe"
-            processes.append(subprocess.Popen(file_path))
+            processes.append(subprocess.Popen(file_path, shell=True))
             
         if self.software == 1:
-            print("software")
-            file_path = "software.exe"
-            processes.append(subprocess.Popen(file_path))
+                print("software")
+                file_path = "software.exe"
+                processes.append(subprocess.Popen(file_path, shell=True))
+        
             
+        
+        # 🔹 啟動 gift.exe
         if self.gift == 1:
             print("gift")
-            file_path = "gift\gift.exe"
-            processes.append(subprocess.Popen(file_path))
-        
-            # file_path1 = "gift_cat\gift_cat.exe"
-            # processes.append(subprocess.Popen(file_path1))
-        
-        # Keep the main application running to allow VSCode to interrupt
-        for process in processes:
-            process.wait()
+            while True:
+                mouse.mouse.start()
+                print("mouse")
+                time.sleep(5)
+                gift.gift.start()
+                print("gift")
+                time.sleep(5)
+                gift_cat.gift_cat.start()
+                print("gift_cat")
+                time.sleep(5)
 
    
 if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)
-    check_start = Check_Start()
+    # check_start = Check_Start()
+    a = StartBreak()
     sys.exit(app.exec())
-    
