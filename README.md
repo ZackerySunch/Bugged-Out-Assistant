@@ -55,7 +55,7 @@
 ## 🛠️ 系統需求
 
 - Python 3.10+
-- 套件：`pyqt6`、`PIL`、`cv2`、`subprocess`、`threading` `os` `sys` `time` `psutil` `subprocess` `webbrowser` `PIL` `PyQt6` `pynput.keyboard` `cv2` `threading`
+- 套件：`pyqt6`、`PIL`、`cv2`、`subprocess`、`threading`、`os`、`sys`、`time`、`psutil`、`subprocess`、`webbrowser`、`PIL`、`PyQt6`、`pynput.keyboard`、`cv2`、`threading`
 
 ---
 
